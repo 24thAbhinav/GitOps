@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-backend-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: argocd-backend
+  template:
+    metadata:
+      labels:
+        app: argocd-backend
+    spec:
+      containers:
+        - name: argocd-backend
+          image: abhinavchauhan24/argocd-backend:v1
+          ports:
+            - containerPort: 3000
