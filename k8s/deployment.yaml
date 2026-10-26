@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: argocd-backend
-          image: abhinavchauhan24/argocd-backend:v1
+          image: abhinavchauhan24/argocd-backend:a214846
           ports:
             - containerPort: 3000
