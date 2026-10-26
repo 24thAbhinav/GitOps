@@ -1,0 +1,18 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local secrets and overrides
+.env
+.env.*
+!.env.example
+*.local.yaml
+
+# Logs and temporary files
+*.log
+tmp/
